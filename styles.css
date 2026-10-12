@@ -72,3 +72,38 @@
 /* Ekintza esteka eta ikono urdinak tonu neutroan */
 .link,.link svg,.doc a{color:#8a7665!important}
 button,.btn{accent-color:#8fae98}
+
+
+/* Azken bateratzea: botoi nagusi guztiak salbia argian, txartelak eta formularioak beigean */
+:root{--g:#8fae98;--g2:#8a7665;--cream:#f3efe5;--paper:#f8f5ec;--ink:#3e4038;--muted:#858477;--line:#ded5c5;--sage:#8fae98;--sage-hover:#7d9b86;--taupe:#8a7665}
+/* Gehitu, Gorde, kargatu eta kopiak berreskuratzeko ekintza nagusi guztiak */
+button.btn.primary,button.primary,.btn.primary,#quick-add,#add-record,#save-settings,#export,#form button[type="submit"],button[data-add],button.wide,[id$="-add"]{background:#8fae98!important;border-color:#8fae98!important;color:#fff!important}
+button.btn.primary:hover,button.primary:hover,.btn.primary:hover,#quick-add:hover,#add-record:hover,#save-settings:hover,#export:hover,#form button[type="submit"]:hover,button[data-add]:hover,button.wide:hover,[id$="-add"]:hover{background:#7d9b86!important;border-color:#7d9b86!important;color:#fff!important}
+/* Inprimaki eta leiho guztiak tonu beige epelean */
+#modal,.modal,#form{background:#f2eadb!important;color:#3e4038!important}
+#modal::backdrop{background:#463d3280}
+#form .field input,#form .field select,#form .field textarea,.field input,.field select,.field textarea,.search{background:#f8f4ea!important;border-color:#d4c5b2!important;color:#48463e!important}
+#form .close,.close{background:#e7dccb!important;color:#786957!important;border-color:#d2c2ad!important}
+/* Eduki berriak eta erregistro guztiak beige; koloretako ertzak mantendu */
+#content .card,#content .settings,.settings,.emptybox,.gallery-card{background:#f5f0e5!important}
+#content .card:nth-child(4n+1){border-color:#c6d0bd!important}#content .card:nth-child(4n+2){border-color:#d9c9a5!important}#content .card:nth-child(4n+3){border-color:#d3b8a9!important}#content .card:nth-child(4n){border-color:#c1c9cc!important}
+/* Ikonoak, estekak eta geziak neutroak */
+.link,.link svg,.doc a,.docicon,.attachment{color:#8a7665!important}
+.docicon{background:#e9ddca!important}
+/* Botoi sekundarioak ez dira ilun berdeak */
+.btn.secondary,.sm{background:#f0eadd!important;color:#65584b!important;border-color:#d9c9b6!important}
+.sm.del{color:#9b6257!important}
+
+
+/* Azken zuzenketa: edozein ekintza-botoi salbia argian, botoi sekundario beigean */
+:root{--g:#8fae98;--g2:#8a7665;--sage:#8fae98;--sage-hover:#7d9b86;--cream:#f3efe5;--paper:#f8f5ec}
+button.primary, .btn.primary, button.btn:not(.secondary), .btn:not(.secondary), #quick-add, #add-record, #save-settings, #export, #form button[type="submit"], button[data-add], button.wide, [id$="-add"], #content button:not(.sm):not(.link):not(.close):not(.del):not([type="checkbox"]){background:#8fae98!important;border-color:#8fae98!important;color:#fff!important}
+button.primary:hover, .btn.primary:hover, button.btn:not(.secondary):hover, .btn:not(.secondary):hover, #quick-add:hover, #add-record:hover, #save-settings:hover, #export:hover, #form button[type="submit"]:hover, button[data-add]:hover, button.wide:hover, [id$="-add"]:hover, #content button:not(.sm):not(.link):not(.close):not(.del):not([type="checkbox"]):hover{background:#7d9b86!important;border-color:#7d9b86!important;color:#fff!important}
+.btn.secondary, .sm{background:#f0eadd!important;color:#65584b!important;border-color:#d9c9b6!important}
+.nav.active{background:#8fae98!important;color:#fff!important}
+.link,.link svg,.doc a,.docicon,.attachment{color:#8a7665!important}
+.home-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.home-gallery-card{display:block;min-width:0;overflow:hidden;border:1px solid #d8cbb9;border-radius:9px;background:#f5f0e5;color:#65584b;text-decoration:none}
+.home-gallery-card img{display:block;width:100%;height:125px;object-fit:cover}
+.home-gallery-card span{display:block;padding:8px;font-size:11px;font-weight:600;overflow-wrap:anywhere}
+@media(max-width:760px){.home-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-gallery-card img{height:145px}}
