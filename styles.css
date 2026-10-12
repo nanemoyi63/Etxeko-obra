@@ -27,3 +27,15 @@
 .nav:hover{background:#eeeee5;border-top-color:#e1dfd3;border-right-color:#e1dfd3;border-bottom-color:#e1dfd3}
 .nav.active{background:#7d9272;color:white;border-color:#7d9272;border-left-color:#a98465;box-shadow:0 3px 8px #7d92721a}
 @media(max-width:760px){.nav{border:1px solid #e4e0d4;border-bottom:3px solid #8fae98;padding:8px 10px}.nav:nth-child(4n+2){border-bottom-color:#c8b477}.nav:nth-child(4n+3){border-bottom-color:#c49a8a}.nav:nth-child(4n){border-bottom-color:#9eafc0}.nav.active{border-color:#7d9272;border-bottom-color:#a98465}}
+/* Kolore berriak: marroia eta berde salbia */
+.sidebar .nav:not(.active) {
+  background: transparent;
+  color: #6f5545;
+  border-left-color: #a98465;
+}
+.sidebar .nav.active {
+  background: #7d9272;
+  color: #ffffff;
+  border-color: #7d9272;
+  border-left-color: #a98465;
+}
