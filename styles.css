@@ -107,3 +107,18 @@ button.primary:hover, .btn.primary:hover, button.btn:not(.secondary):hover, .btn
 .home-gallery-card img{display:block;width:100%;height:125px;object-fit:cover}
 .home-gallery-card span{display:block;padding:8px;font-size:11px;font-weight:600;overflow-wrap:anywhere}
 @media(max-width:760px){.home-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-gallery-card img{height:145px}}
+
+/* Argazkiak: aurrebista handiak eta sakatzean pantaila osoan ikusteko */
+.home-gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.home-gallery-card{display:block;min-width:0;overflow:hidden;border:1px solid #d8cbb9;border-radius:12px;background:#f5f0e5;color:#65584b;text-decoration:none;box-shadow:0 3px 12px rgba(64,57,44,.06)}
+.home-gallery-card img{display:block;width:100%;height:clamp(190px,22vw,290px);object-fit:cover;transition:transform .2s}
+.home-gallery-card:active img,.gallery-card a:active img{transform:scale(1.02)}
+.home-gallery-card span{display:block;padding:10px 12px;font-size:12px;font-weight:600;overflow-wrap:anywhere}
+.gallery-card img{cursor:zoom-in}
+.record-photo{cursor:zoom-in}
+.photo-viewer{border:0;padding:44px 14px 16px;background:#f2eadb;border-radius:14px;width:min(1100px,96vw);max-width:96vw;max-height:94vh;box-shadow:0 24px 90px #10271d66;overflow:auto}
+.photo-viewer::backdrop{background:#17271fcc;backdrop-filter:blur(4px)}
+.photo-viewer img{display:block;max-width:100%;max-height:78vh;width:auto;height:auto;object-fit:contain;margin:0 auto;border-radius:7px}
+.photo-viewer-caption{text-align:center;padding:12px 8px 0;color:#65584b;font-size:13px}
+.photo-close{position:absolute;right:10px;top:8px;border:1px solid #d2c2ad;border-radius:50%;width:32px;height:32px;background:#e7dccb;color:#65584b;font-size:23px;line-height:1}
+@media(max-width:760px){.home-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-gallery-card img{height:190px}.photo-viewer{padding:44px 8px 12px;width:96vw;max-width:96vw}}
