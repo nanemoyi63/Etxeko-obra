@@ -122,3 +122,15 @@ button.primary:hover, .btn.primary:hover, button.btn:not(.secondary):hover, .btn
 .photo-viewer-caption{text-align:center;padding:12px 8px 0;color:#65584b;font-size:13px}
 .photo-close{position:absolute;right:10px;top:8px;border:1px solid #d2c2ad;border-radius:50%;width:32px;height:32px;background:#e7dccb;color:#65584b;font-size:23px;line-height:1}
 @media(max-width:760px){.home-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-gallery-card img{height:190px}.photo-viewer{padding:44px 8px 12px;width:96vw;max-width:96vw}}
+
+/* Etxeko Obra: gastatutako guztia txartela gastuetara nabigatzeko */
+.stat-clickable{cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}.stat-clickable:hover,.stat-clickable:focus-visible{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,55,45,.12);outline:2px solid var(--g);outline-offset:2px}
+
+/* Acciones de adjuntos individuales y acceso directo a Gastuak */
+.stat-clickable{cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;}
+.stat-clickable:hover,.stat-clickable:focus-visible{outline:2px solid var(--g);outline-offset:2px;transform:translateY(-1px);}
+.stat-clickable p{font-weight:600;}
+.existing-files,.pending-files{display:flex;flex-direction:column;gap:8px;margin-top:10px;}
+.existing-file{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #d9d2c5;border-radius:10px;background:#f7f3eb;color:#554d42;}
+.existing-file span{min-width:0;overflow-wrap:anywhere;font-size:.92rem;}
+.existing-file button{flex-shrink:0;}
